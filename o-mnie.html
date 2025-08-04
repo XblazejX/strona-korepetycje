@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>O mnie – Błażej Jeniec</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="menu.js"></script>
+</head>
+<body>
+
+  <!-- Ikona otwierająca menu -->
+  <i class="fas fa-bars" id="menu-icon" onclick="toggleNav()"></i>
+
+  <!-- Wysuwane menu -->
+  <div id="mySidenav" class="sidenav">
+    <a href="o-mnie.html">O mnie</a>
+    <a href="korepetycje.html">Korepetycje</a>
+
+    <div class="contact-links">
+      <p>Skontaktuj się ze mną:</p>
+
+      <div class="contact-item">
+        <i class="fab fa-facebook"></i>
+        <div class="contact-text">
+          <div class="contact-label">Facebook:</div>
+          <div class="white-text">Błażej Jeniec</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-discord"></i>
+        <div class="contact-text">
+          <div class="contact-label">Discord ID:</div>
+          <div class="white-text">blazej_ek6</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div class="contact-text">
+          <div class="contact-label">Numer telefonu:</div>
+          <div class="white-text">+48 668 371 380</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div class="contact-text">
+          <div class="contact-label">Email:</div>
+          <div>
+            <div class="white-text">jeniecblazej@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sekcja o mnie -->
+  <div class="container about-section">
+    <div class="about-text">
+      <h1>O mnie</h1>
+      <p>Nazywam się Błażej Jeniec i jestem pasjonatem programowania oraz matematyki. Mimo ze uczęszczam do klasy maturalnej to od wielu lat udzielam korepetycji z matematyki na różnych poziomach edukacji. Pomagam uczniom liceów i maturzystom zrozumieć skomplikowane koncepcje matematyczne oraz osiągać lepsze wyniki w nauce.</p>
+      <p>Pracuję w sposób przyjazny i indywidualny: dostosowuję metody nauczania do Twoich potrzeb i tempa nauki.</p>
+      <p>W wolnym czasie interesuję się nowymi sposobami rozwiązywania zadań jak i kodem komputerowaym, co pozwala mi wykorzystywać różne narzędzia edukacyjne podczas zajęć. Zapraszam do współpracy!</p>
+    </div>
+    <div class="photo-container">
+      <img src="profilowe.jpg" alt="Błażej Jeniec" class="profile-photo">
+    </div>
+  </div>
+
+  <!-- Sekcja osiągnięć -->
+  <div class="container">
+    <h2>Moje osiągnięcia matematyczne</h2>
+    <ul>
+      <li>Uczestnik olimpiady o diamentowy index AGH</li>
+      <li>Finalista konkursu Kangur Matematyczny – poziom student</li>
+      <li>Wieloletnie doświadczenie w przygotowywaniu uczniów do matury i egzaminu ósmoklasisty</li>
+
+    </ul>
+  </div>
+
+  <!-- Skrypt do obsługi menu -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "280px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+</html>

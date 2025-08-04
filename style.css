@@ -1,0 +1,183 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #121212;
+  background-image:
+    linear-gradient(#272727 1px, transparent 1px),
+    linear-gradient(90deg, #272727 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #eee;
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: #00ffc8;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 1.5em;
+  color: #00ffc8;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 1.05em;
+}
+
+/* Flexbox dla sekcji "O mnie" */
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.about-text {
+  flex: 1 1 60%;
+}
+
+.photo-container {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00ffc8;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Ikona menu */
+#menu-icon {
+  font-size: 2em;
+  position: fixed;
+  top: 24px;
+  left: 32px;
+  color: #00ffc8;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Menu nawigacyjne */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #eee;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #00ffc8;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2em;
+  color: #eee;
+}
+
+/* Kontakt */
+.contact-links {
+  padding: 10px 30px;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.contact-item i {
+  font-size: 1.2em;
+  color: #00ffc8;
+  min-width: 24px;
+  margin-top: 2px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-label {
+  font-size: 1em;
+  color: #aaa;
+  margin-bottom: 2px;
+}
+
+.white-text {
+  font-size: 1.2em;
+  color: #eee;
+}
+
+.plain-link {
+  color: #eee;
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: left;
+}
+
+.plain-link:hover {
+  color: #00ffc8;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    flex: 1 1 100%;
+  }
+
+  .photo-container {
+    margin-top: 20px;
+  }
+}

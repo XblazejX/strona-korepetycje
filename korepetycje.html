@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Korepetycje z matematyki – Błażej Jeniec</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="menu.js"></script>
+</head>
+<body>
+
+  <!-- Ikona otwierająca menu -->
+  <i class="fas fa-bars" id="menu-icon" onclick="toggleNav()"></i>
+
+  <!-- Wysuwane menu -->
+  <div id="mySidenav" class="sidenav">
+    <a href="o-mnie.html">O mnie</a>
+    <a href="korepetycje.html">Korepetycje</a>
+
+    <div class="contact-links">
+      <p>Skontaktuj się ze mną:</p>
+
+      <div class="contact-item">
+        <i class="fab fa-facebook"></i>
+        <div class="contact-text">
+          <div class="contact-label">Facebook:</div>
+          <div class="white-text">Błażej Jeniec</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-discord"></i>
+        <div class="contact-text">
+          <div class="contact-label">Discord ID:</div>
+          <div class="white-text">blazej_ek6</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div class="contact-text">
+          <div class="contact-label">Numer telefonu:</div>
+          <div class="white-text">+48 668 371 380</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div class="contact-text">
+          <div class="contact-label">Email:</div>
+          <div>
+            <div class="white-text">jeniecblazej@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Treść strony -->
+  <div class="container">
+    <h1>Korepetycje z matematyki</h1>
+    <p>Oferuję profesjonalne korepetycje z matematyki dostosowane do Twoich potrzeb i poziomu edukacji. Specjalizuję się w przygotowaniu uczniów liceów do matury z matematyki oraz pomagam zrozumieć zagadnienia z zakresu szkoły podstawowej.</p>
+    <p>Podczas lekcji korzystam z nowoczesnych metod i materiałów dydaktycznych, aby nauka była angażująca i efektywna. Mogę pomóc w opanowaniu algebry, geometrii, analizy matematycznej i innych działów, w zależności od Twoich potrzeb.</p>
+    <p>Zapewniam elastyczny grafik zajęć, naukę zarówno online, jak i stacjonarnie (na terenie Mielca), oraz wsparcie również poza lekcjami. Razem osiągniemy sukces w nauce matematyki!</p>
+  </div>
+
+  <!-- Skrypt do obsługi menu -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "280px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+</html>
